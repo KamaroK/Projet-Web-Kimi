@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <title>Connexion</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Anchya MUHIMPUNDU & Kenthia BIGENDAKUMANA"/>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css" media="all">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css" media="all">
+        <link rel="stylesheet" type="text/css" href="styles/formulaire.css" media="all">
+        <link rel="stylesheet" type="text/css" href="styles/styleDevices.css" media="all">
+        <script src="scripts/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/b112f3960a.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav id="Menu">
+            <img src="imgs/kimi-logo.svg" alt="kimi_logo" height = "100"/>
+            
+            <ul>
+                <li class="menuElt"><a href="index.html">Accueil</a></li>
+                <li class="menuElt"><a href="collections.html">Collections</a></li>
+                <li class="menuElt"><a href="connexion.html">Connexion</a></li>
+                <li class="menuElt"><a href="inscription.html">Inscription</a></li>
+                <li class="menuElt"><a href="contact.html">Nous contacter</a></li>
+            </ul>
+        </nav>
+        
+        <div class="home">
+            <div class="formulaire">
+                <form class="inscription" onsubmit="login()" method="get" action="../www/htbin/login.py" autocomplete="off">
+                    <p class="formName">CONNEXION</p>
+                    <br>
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" name="username" id="username" required onkeyup="verifUserName(this.value)">
+    
+    
+                    <label for="userpwd">Mot de passe</label>
+                    <input type="password" id="userpwd" name="userpwd" required onkeyup="verifMDP(this.value)">
+    
+                    <input type="submit" value="CONNEXION" class="btnSubmit">
+                </form>
+                <p></p>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footerIn">
+                <div class="footerTexte">
+                    <h4>A propos</h4>
+                    <p>
+                        Ce site a été conçu en HTML, CSS et JavaScript. 
+                        <br>Site de démonstration pour un projet universitaire.     
+                    </p>
+                </div>
+    
+                <div class="footerLiens">
+                    <h4>Plan du site</h4>
+                    <a href="#">Accueil</a>
+                    <a href="collections.html">Collections</a>
+                    <a href="connexion.html">Connexion</a>
+                    <a href="inscription.html">Inscription</a>
+                    <a href="contact.html">Nous contacter</a>
+    
+                </div>
+    
+                <div class="footerDroit">
+                        <a class="facebook" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+    
+            </div>
+            <p class="commentFin">Copyright &copy; 2022 | Tous droits réservés</p>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <title>Contact</title>
+        <link rel="icon" type="image/svg" href="imgs/kimi-logo.svg">
+
+        <meta charset="utf-8"/>
+        <meta name="author" content="Anchya MUHIMPUNDU & Kenthia BIGENDAKUMANA"/>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css" media="all">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css" media="all">
+        <link rel="stylesheet" type="text/css" href="styles/contact.css" media="all">
+        <link rel="stylesheet" type="text/css" href="styles/styleDevices.css" media="all">
+        <script src="scripts/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/b112f3960a.js" crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="scripts/chat.js"></script>
+    </head>
+
+    <body>
+        <nav id="Menu">
+            <img src="imgs/kimi-logo.svg" alt="kimi_logo" height = "100"/>
+            
+            <ul>
+                <li class="menuElt"><a href="index.html">Accueil</a></li>
+                <li class="menuElt"><a href="collections.html">Collections</a></li>
+                <li class="menuElt"><a href="connexion.html">Connexion</a></li>
+                <li class="menuElt"><a href="inscription.html">Inscription</a></li>
+                <li class="menuElt"><a href="contact.html">Nous contacter</a></li>
+            </ul>
+        </nav>
+
+        <div class="home">
+            <div class="content">
+                <p>
+                    Posez vos questions sur notre marque
+                </p>
+            </div>
+        </div>
+        
+        <section class="chatbox">
+            <section class="fenetre">
+
+                <div id="chatMessages"> </div>
+
+            </section>
+
+            <form class="chatSaisie" onsubmit="return false;">
+                <input type="text" autocomplete="on" placeholder="Votre message" class="message" id="message" name="message" />
+                <button type="submit" id="send" value="Envoyer"><i class="fas fa-location-arrow"></i></button>
+            </form>
+        </section>
+        
+        
+        <footer class="footer">
+            <div class="footerIn">
+                <div class="footerTexte">
+                    <h4>A propos</h4>
+                    <p>
+                        Ce site a été conçu en HTML, CSS et JavaScript. 
+                        <br>Site de démonstration pour un projet universitaire.     
+                    </p>
+                </div>
+    
+                <div class="footerLiens">
+                    <h4>Plan du site</h4>
+                    <a href="#">Accueil</a>
+                    <a href="collections.html">Collections</a>
+                    <a href="connexion.html">Connexion</a>
+                    <a href="inscription.html">Inscription</a>
+                    <a href="contact.html">Nous contacter</a>
+    
+                </div>
+    
+                <div class="footerDroit">
+                        <a class="facebook" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+    
+            </div>
+            <p class="commentFin">Copyright &copy; 2022 | Tous droits réservés</p>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <title>Inscription</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Anchya MUHIMPUNDU & Kenthia BIGENDAKUMANA"/>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css" media="all">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css" media="all">
+        <link rel="stylesheet" type="text/css" href="styles/formulaire.css" media="all">
+        <link rel="stylesheet" type="text/css" href="styles/styleDevices.css" media="all">
+        <script src="scripts/scripts.js"></script>
+        <script src="scripts/inscription.js"></script>
+        <script src="https://kit.fontawesome.com/b112f3960a.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav id="Menu">
+            <img src="imgs/kimi-logo.svg" alt="kimi_logo" height = "100"/>
+            
+            <ul>
+                <li class="menuElt"><a href="index.html">Accueil</a></li>
+                <li class="menuElt"><a href="collections.html">Collections</a></li>
+                <li class="menuElt"><a href="connexion.html">Connexion</a></li>
+                <li class="menuElt"><a href="inscription.html">Inscription</a></li>
+                <li class="menuElt"><a href="contact.html">Nous contacter</a></li>
+            </ul>
+        </nav>
+        
+        <div class="home">
+            <div class="formulaire">
+                    <form class="inscription" onsubmit="return valideFormulaire(event);" method="post" action="../www/htbin/register.py" autocomplete="off">
+                        <p class="formName">
+                            INSCRIPTION
+                        </p>
+                        
+                        <br>
+                        <label for="firstname">Identité *</label>
+                        <input type="text" placeholder="prénom" name="firstname" id="firstname" required onkeyup="verifFirstName(this.value)">
+                        <br>
+                        <br>
+                        <input type="text" placeholder="nom" name="lastname" id="lastname" required onkeyup="verifLastName(this.value)">
+        
+                        <label for="birthdate">Date de naissance *</label>
+                        <input type="text" placeholder="jj / mm / aaaa" name="birthdate" id="birthdate" onkeyup="verifDate(this.value)">
+        
+                        <label for="username">Nom d'utilisateur *</label>
+                        <input type="text" placeholder="doit contenir au moins 6 caractères" name="username" id="username" required onkeyup="verifUserName(this.value)">
+        
+                        <label for="useremail">Adresse E-mail *</label>
+                        <input type="text"  placeholder="email" name="useremail" id="useremail" required onkeyup="verifEmail(this.value)">
+        
+                        <label for="userpwd">Mot de passe *</label>
+                        <input type="password" placeholder="doit contenir une majuscule une minuscule et un chiffre" name="userpwd" id="userpwd" required onkeyup="verifPwd(this.value)">
+        
+                        <input type="submit" value="INSCRIPTION" class="btnSubmit">
+
+                    </form> 
+                    <p></p>
+                
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footerIn">
+                <div class="footerTexte">
+                    <h4>A propos</h4>
+                    <p>
+                        Ce site a été conçu en HTML, CSS et JavaScript. 
+                        <br>Site de démonstration pour un projet universitaire.     
+                    </p>
+                </div>
+    
+                <div class="footerLiens">
+                    <h4>Plan du site</h4>
+                    <a href="#">Accueil</a>
+                    <a href="collections.html">Collections</a>
+                    <a href="connexion.html">Connexion</a>
+                    <a href="inscription.html">Inscription</a>
+                    <a href="contact.html">Nous contacter</a>
+    
+                </div>
+    
+                <div class="footerDroit">
+                        <a class="facebook" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+    
+            </div>
+            <p class="commentFin">Copyright &copy; 2022 | Tous droits réservés</p>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,175 @@
+/* Smartphones (portrait) */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    p,
+    a {
+        font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (768 - 320)));
+    }
+    h1 {
+        font-size: calc(40px + (60 - 40) * ((100vw - 320px) / (768 - 320)));
+    }
+    h2 {
+        font-size: calc(25px + (45 - 25) * ((100vw - 320px) / (768 - 320)));
+    }
+
+    label.logo {
+        font-size: 20px;
+        line-height: 60px;
+    }
+    main {
+        margin-top: 60px;
+    }
+    nav#topMenu {
+        height: 60px;
+    }
+    nav ul {
+        top: 60px;
+    }
+    nav ul li {
+        margin: 0 !important;
+    }
+    nav ul li a {
+        font-size: 20px !important;
+    }
+ 
+    .content {
+        width: auto;
+    }
+
+    figure{
+        width: 30vw;
+    }
+        
+    figcaption{
+        font-size: smaller;
+    }
+        
+    .container { 
+        overflow: scroll;
+        max-width: 3vw;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 15%;
+        border-radius: 10px;
+        padding: 15vw;
+    }
+
+    .box {
+        width: auto;
+    }
+    .footerIn {
+        display: block;
+    }
+    .footerTexte {
+        width: 100%;
+        display: block;
+        line-height: 25px;
+        padding-bottom: 25px;
+    }
+    .footerLiens a {
+        text-align: center;
+    }
+    .footer .footerDroit {
+        display: block;
+        text-align: center;
+        padding-top: 25px;
+    }
+    .footer .footerDroit a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+/* Tablettes (portrait) */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    p,
+    a {
+        font-size: calc(15px + (20 - 15) * ((100vw - 768px) / (1024 - 768)));
+    }
+    h1 {
+        font-size: calc(50px + (60 - 50) * ((100vw - 768px) / (1024 - 768)));
+    }
+    h2 {
+        font-size: calc(35px + (45 - 35) * ((100vw - 768px) / (1024 - 768)));
+    }
+    
+    figure{
+        width: 30vw;
+    }
+        
+    figcaption{
+        font-size: smaller;
+    }
+        
+    .container { 
+        overflow: scroll;
+        max-width: 3vw;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 15%;
+        border-radius: 10px;
+        padding: 15vw;
+    }
+
+    .content {
+        width: auto;
+    }
+    .imgscroll {
+        display: none;
+    }
+    .boite {
+        width: auto;
+    }
+    .formulaire {
+        width: 45%;
+    }
+}
+
+
+/*  Tablettes et smartphone format paysages */
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    p,
+    a {
+        font-size: calc(18px + (20 - 18) * ((100vw - 1200px) / (1200 - 1024)));
+    }
+    h1 {
+        font-size: calc(55px + (60 - 55) * ((100vw - 1200px) / (1200 - 1024)));
+    }
+    h2 {
+        font-size: calc(40px + (45 - 40) * ((100vw - 1200px) / (1200 - 1024)));
+    }
+}
+
+
+/*  Pour le menu, mobile et tablette */
+
+@media only screen and (max-width: 1200px) {
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#F28C38;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 30px;
+    }
+    .element ul {
+        display: block;
+        position: initial;
+        background: #ffffff;
+        width: auto;
+        height: auto;
+    }
+}

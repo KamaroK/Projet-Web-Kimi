@@ -1,0 +1,91 @@
+.footer {
+    background-color: #142c00;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 45px 50px;
+}
+
+.footerCol {
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 45px 50px;
+}
+
+.footer .footerIn p {
+    color: #e6e4e4;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.footerCol .footerIn p {
+    color: black;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.footerTexte {
+    width: 60%;
+    display: block;
+    line-height: 25px;
+}
+
+.footerLiens {
+    display: grid;
+    width: auto;
+    top: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footerIn {
+    display: flex;
+}
+
+.footerLiens a {
+    color: #e6e4e4;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.footerCol .footerLiens a {
+    color: black;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.link1 {
+    padding-top: 20px;
+}
+
+.commentFin {
+    color: #e6e4e4;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.footerCol .commentFin {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.footer .footerDroit {
+    display: grid;
+    line-height: 20px;
+}
+
+.footer .footerDroit a {
+    width: 25px;
+    height: 30px;
+    font-size: 25px;
+    color: #e6e4e4;
+    line-height: 35px;
+    transition: all .25s;
+}

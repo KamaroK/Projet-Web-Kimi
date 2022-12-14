@@ -1,0 +1,104 @@
+
+body.inscription {
+    height: 100%;
+}
+
+
+
+p.formName {
+    padding: 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.formulaire {
+    display: block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+    height: inherit;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+.formulaire label {
+    display: block;
+    font-family: 'Oswald';
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: #000000;
+}
+
+.formulaire ::placeholder {
+    font-size: 15px;
+    color: #8a8a8a;
+}
+
+input {
+    font-size: 17px;
+    margin: auto;
+    display: block;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 4px solid #142c00;
+    padding: 8px;
+    transition: 0.4s;
+    color: #000000;
+}
+
+input:focus {
+    border-bottom: 4px solid #000a39;
+    transition: 0.4s;
+}
+
+.btnSubmit {
+    border: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    background: #142c00;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnSubmit:hover {
+    background: #000000;
+    transition: 0.3s;
+}
+
+
+.error {
+    display: none;
+    margin: auto;
+    margin-top: 30px;
+    border-top: 4px solid #bb0000;
+    background: #ffd0d0;
+    transition: 0.4s;
+}
+
+.error p {
+    width: 100%;
+    font-size: 17px;
+    margin: auto;
+    display: inline-block;
+    color: black;
+    padding: 10px;
+}
+
+i.fas.fa-times-circle {
+    margin: auto;
+    padding-left: 10px;
+    color: #bb0000;
+}
